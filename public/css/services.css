@@ -1,0 +1,34 @@
+.services {
+    /* border: 2px solid green; */
+    min-height: 50dvh;
+}
+
+.services .title {
+    font-size: 2rem;
+    padding: 2rem 0;
+
+}
+
+.services .title h1 {
+    text-align: center;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.services .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.services .cards .card {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 2px 2px 2px var(--primary-color);
+    }
+}

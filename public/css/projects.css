@@ -1,0 +1,68 @@
+.projects{
+    /* border: 2px solid green; */
+    min-height: 60dvh;
+    background-color: whitesmoke;
+}
+.projects .title{
+    font-size: 2rem;
+    padding: 2rem 0;
+    
+}
+.projects .title h1{
+    text-align: center;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    /* place-items: center; */
+    /* color: var(--text-color); */
+    
+}
+
+.projects .cards .card{
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:nth-child(even){
+        background-size: 200%;
+    }
+
+    &:hover {
+        &:nth-child(odd){
+            box-shadow: 2px 2px 2px var(--primary-color);
+        }
+        &:nth-child(even){
+            background-size: 70%;
+        }
+    }
+    
+    h3{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    &:nth-child(2){
+        background-image: url(../media/image1.jpg);
+    }
+    &:nth-child(4){
+        background-image: url(../media/image2.jpg);
+    }
+    &:nth-child(6){
+        background-image: url(../media/image3.jpg);
+    }
+    &:nth-child(8){
+        background-image: url(../media/image4.jpg);
+    }
+    
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #50A41C;
+    --secondary-color: #1c2126;
+    --bg-color: #f8f9fa;
+    --text-color: #f4f4f4;
+    
+    --border-color: #dee2e6;
+    --border-radius: 0.25rem;
+    --transition: all 0.3s ease-in-out;
+}
